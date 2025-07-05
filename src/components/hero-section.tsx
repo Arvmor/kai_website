@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Play } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -23,7 +23,7 @@ export function HeroSection() {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Live crypto news intelligence, trending projects dashboard, and AI-powered analytics. Get real-time insights from Twitter, Bloomberg, and top sources with updates every 4 seconds.
+            Real-time crypto intelligence with AI-powered analytics. Track trending projects and market insights from Twitter, Bloomberg, and top sources.
           </p>
         </div>
 
@@ -31,18 +31,10 @@ export function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button 
             size="lg" 
-            className="bg-white hover:bg-gray-100 text-black px-8 py-4 text-lg font-semibold"
+            className="bg-muted/80 hover:bg-gray-100 text-black px-8 py-4 text-lg font-semibold"
           >
-            Start exploring
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="border-2 border-gray-600 text-white px-8 py-4 text-lg font-semibold hover:bg-gray-900"
-          >
-            <Play className="mr-2 w-5 h-5" />
-            Watch demo
+            Early Access
+            <ArrowRight className="size-4" />
           </Button>
         </div>
 
