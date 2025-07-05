@@ -30,8 +30,8 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="Synapse" width={32} height={32}/>
-            <span className="text-xl font-bold text-white">Synapse</span>
+            <Image src="/logo.png" alt="Synps" width={32} height={32}/>
+            <span className="text-xl font-bold text-white">Synps</span>
           </Link>
 
           {/* Desktop Menu */}

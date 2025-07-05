@@ -148,7 +148,7 @@ export function EnterpriseContactSection() {
                   className="mt-1 w-4 h-4 bg-white/5 border border-white/10 rounded focus:ring-2 focus:ring-blue-500"
                 />
                 <label className="text-sm text-gray-300">
-                  I agree to receive marketing communications from Synapse. You can unsubscribe at any time.
+                  I agree to receive marketing communications from Synps. You can unsubscribe at any time.
                 </label>
               </div>
 

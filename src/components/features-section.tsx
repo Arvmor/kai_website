@@ -50,7 +50,7 @@ export function FeaturesSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Synapse Platform
+            Synps Platform
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             From live news aggregation to AI-powered analytics, get everything you need to stay ahead in the Web3 ecosystem.
