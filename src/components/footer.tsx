@@ -3,41 +3,41 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import Image from "next/image"
 
 export function Footer() {
   const footerSections = [
     {
-      title: "Resources",
+      title: "Platform",
       links: [
-        { label: "Desktop app", href: "#" },
-        { label: "Developers", href: "#" },
-        { label: "Wallpapers", href: "#" },
-        { label: "Community", href: "#" },
-        { label: "Meetups", href: "#" },
-        { label: "Events", href: "#" },
-        { label: "Programs", href: "#" },
+        { label: "News Intelligence", href: "#" },
+        { label: "Project Tracking", href: "#" },
+        { label: "Investment Discovery", href: "#" },
+        { label: "Trading Analytics", href: "#" },
+        { label: "AI Analytics", href: "#" },
+        { label: "API Access", href: "#" },
       ]
     },
     {
-      title: "Solutions",
+      title: "Data Sources",
       links: [
-        { label: "Agencies", href: "#" },
-        { label: "Students", href: "#" },
-        { label: "Creators", href: "#" },
-        { label: "Startups", href: "#" },
-        { label: "Experts", href: "#" },
-        { label: "Switch", href: "#" },
+        { label: "Twitter", href: "#" },
+        { label: "Bloomberg", href: "#" },
+        { label: "DexScreener", href: "#" },
+        { label: "CoinGecko", href: "#" },
+        { label: "a16z", href: "#" },
+        { label: "Polychain", href: "#" },
       ]
     },
     {
-      title: "Compare",
+      title: "Markets",
       links: [
-        { label: "Squarespace", href: "#" },
-        { label: "Wordpress", href: "#" },
-        { label: "Unbounce", href: "#" },
-        { label: "Webflow", href: "#" },
-        { label: "Figma", href: "#" },
-        { label: "Wix", href: "#" },
+        { label: "DeFi", href: "#" },
+        { label: "NFTs", href: "#" },
+        { label: "Gaming", href: "#" },
+        { label: "AI/ML", href: "#" },
+        { label: "Infrastructure", href: "#" },
+        { label: "Layer 1s", href: "#" },
       ]
     },
     {
@@ -45,21 +45,21 @@ export function Footer() {
       links: [
         { label: "Security", href: "#" },
         { label: "Careers", href: "#" },
-        { label: "Report", href: "#" },
         { label: "Status", href: "#" },
         { label: "Legal", href: "#" },
-        { label: "Brand", href: "#" },
+        { label: "Privacy", href: "#" },
+        { label: "Contact", href: "#" },
       ]
     }
   ]
 
   const socialLinks = [
-    { label: "Instagram", href: "#" },
-    { label: "YouTube", href: "#" },
-    { label: "Threads", href: "#" },
+    { label: "Twitter", href: "#" },
+    { label: "Discord", href: "#" },
+    { label: "Telegram", href: "#" },
     { label: "LinkedIn", href: "#" },
-    { label: "TikTok", href: "#" },
-    { label: "X", href: "#" },
+    { label: "GitHub", href: "#" },
+    { label: "Blog", href: "#" },
   ]
 
   return (
@@ -70,27 +70,25 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-lg">S</span>
-              </div>
+              <Image src="/logo.png" alt="Synapse" width={32} height={32}/>
               <span className="text-xl font-bold">Synapse</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
-              Step into the future of design. Join thousands of designers and teams using Synapse to turn ideas into high-performing websites, fast.
+              Stay ahead in the Web3 - Synapse
             </p>
             <div className="flex space-x-4">
               <Button 
                 size="sm" 
                 className="bg-white text-black hover:bg-gray-100"
               >
-                Start for free
+                Start exploring
               </Button>
               <Button 
                 size="sm" 
                 variant="outline" 
                 className="border-gray-600 text-white hover:bg-gray-900"
               >
-                Start with AI
+                View demo
               </Button>
             </div>
           </div>

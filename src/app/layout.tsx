@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Synapse - The website builder loved by designers",
-  description: "Build beautiful websites with Synapse. The modern website builder that makes design and development seamless.",
-  keywords: ["website builder", "design", "development", "no-code", "web design"],
-  authors: [{ name: "Synapse Team" }],
+  title: "Synapse - Live Crypto News & Analytics",
+  description: "Real-time Web3 news intelligence, trending projects dashboard, seed round discovery, and AI-powered crypto analytics. Stay ahead with live updates every 4 seconds.",
+  keywords: ["Web3", "crypto news", "blockchain analytics", "DeFi", "NFT", "crypto intelligence", "trading analytics", "investment discovery"],
+  authors: [{ name: "Web3 Intelligence Team" }],
   openGraph: {
-    title: "Synapse - The website builder loved by designers",
-    description: "Build beautiful websites with Synapse. The modern website builder that makes design and development seamless.",
+    title: "Synapse - Live Crypto News & Analytics",
+    description: "Real-time Web3 news intelligence, trending projects dashboard, seed round discovery, and AI-powered crypto analytics. Stay ahead with live updates every 4 seconds.",
     type: "website",
   },
 };

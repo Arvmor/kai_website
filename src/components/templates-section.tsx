@@ -6,69 +6,69 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, ExternalLink } from "lucide-react"
 
 export function TemplatesSection() {
-  const templates = [
+  const dashboards = [
     {
-      name: "Startup",
-      description: "Perfect for new businesses and startups",
+      name: "News Intelligence",
+      description: "Live crypto news aggregation with AI impact assessment",
       image: "/api/placeholder/400/300",
-      category: "Business"
+      category: "Analytics"
     },
     {
-      name: "Agency",
-      description: "Professional agency and service websites",
+      name: "Project Tracking",
+      description: "Real-time social and market metrics for Web3 projects",
       image: "/api/placeholder/400/300",
-      category: "Business"
+      category: "Monitoring"
     },
     {
-      name: "Portfolio",
-      description: "Showcase your work and skills",
+      name: "Investment Discovery",
+      description: "Seed rounds and funding opportunities with AI scoring",
       image: "/api/placeholder/400/300",
-      category: "Personal"
+      category: "Investment"
     },
     {
-      name: "SaaS",
-      description: "Software and app landing pages",
+      name: "Trading Analytics",
+      description: "Multi-DEX support with live trading metrics",
       image: "/api/placeholder/400/300",
-      category: "Business"
+      category: "Trading"
     }
   ]
 
-  const plugins = [
+  const integrations = [
     {
-      name: "Sheets",
-      users: "73K",
-      description: "Sync with Google",
-      action: "Open in"
+      name: "Twitter",
+      users: "Real-time",
+      description: "Social sentiment analysis",
+      action: "Connect"
     },
     {
-      name: "Humblytics",
-      users: "40K",
-      description: "Track your site",
-      action: "Open in"
+      name: "Bloomberg",
+      users: "Live",
+      description: "Financial news feed",
+      action: "Connect"
     },
     {
-      name: "Lummi",
-      users: "85K",
-      description: "Beautiful assets",
-      action: "Open in"
+      name: "DexScreener",
+      users: "Multi-DEX",
+      description: "Trading data integration",
+      action: "Connect"
     },
     {
-      name: "Renamer",
-      users: "18K",
-      description: "Organize your layers",
-      action: "Open in"
+      name: "CoinGecko",
+      users: "Market data",
+      description: "Price and volume feeds",
+      action: "Connect"
     },
     {
-      name: "Semflow",
-      users: "45K",
-      description: "SEO tools",
-      action: "Open in"
+      name: "a16z",
+      users: "Investment",
+      description: "Deal flow insights",
+      action: "Connect"
     },
     {
-      name: "Dither",
-      users: "7K",
-      description: "Dither effect for images",
-      action: "Open in"
+      name: "Polychain",
+      users: "Portfolio",
+      description: "Investment tracking",
+      action: "Connect"
     }
   ]
 
@@ -78,46 +78,46 @@ export function TemplatesSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Start with a Template, level-up with Plugins
+            Powerful Dashboards & Integrations
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Choose from hundreds of beautiful templates and extend your site with powerful plugins.
+            Choose from specialized Web3 intelligence dashboards and connect with leading data sources and platforms.
           </p>
         </div>
 
-        {/* Templates Grid */}
+        {/* Dashboards Grid */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-white mb-8 text-center">
-            Templates
+            Intelligence Dashboards
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {templates.map((template, index) => (
+            {dashboards.map((dashboard, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-gray-800 hover:bg-gray-700">
                 <CardHeader className="pb-4">
                   <div className="aspect-video bg-gray-700 rounded-lg mb-4 flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-12 h-12 bg-white rounded-lg mx-auto mb-2 flex items-center justify-center">
-                        <span className="text-black font-bold text-lg">F</span>
+                        <span className="text-black font-bold text-lg">W3</span>
                       </div>
-                      <p className="text-sm text-gray-400">{template.name}</p>
+                      <p className="text-sm text-gray-400">{dashboard.name}</p>
                     </div>
                   </div>
                   <CardTitle className="text-lg font-semibold text-white">
-                    {template.name}
+                    {dashboard.name}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300 mb-4">
-                    {template.description}
+                    {dashboard.description}
                   </CardDescription>
                   <Badge variant="secondary" className="mb-4 bg-gray-700 text-gray-300">
-                    {template.category}
+                    {dashboard.category}
                   </Badge>
                   <Button 
                     variant="ghost" 
                     className="w-full justify-between text-white hover:text-gray-300 group-hover:bg-gray-700"
                   >
-                    Use template
+                    Launch dashboard
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </CardContent>
@@ -126,33 +126,33 @@ export function TemplatesSection() {
           </div>
         </div>
 
-        {/* Plugins Grid */}
+        {/* Integrations Grid */}
         <div>
           <h3 className="text-2xl font-bold text-white mb-8 text-center">
-            Popular Plugins
+            Data Integrations
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {plugins.map((plugin, index) => (
+            {integrations.map((integration, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-gray-800 hover:bg-gray-700">
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between mb-2">
                     <CardTitle className="text-lg font-semibold text-white">
-                      {plugin.name}
+                      {integration.name}
                     </CardTitle>
                     <Badge variant="outline" className="text-xs border-gray-600 text-gray-300">
-                      {plugin.users} users
+                      {integration.users}
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300 mb-4">
-                    {plugin.description}
+                    {integration.description}
                   </CardDescription>
                   <Button 
                     variant="ghost" 
                     className="w-full justify-between text-white hover:text-gray-300 group-hover:bg-gray-700"
                   >
-                    {plugin.action}
+                    {integration.action}
                     <ExternalLink className="w-4 h-4" />
                   </Button>
                 </CardContent>
@@ -168,7 +168,7 @@ export function TemplatesSection() {
             variant="outline" 
             className="border-2 border-gray-600 text-white px-8 py-4 text-lg font-semibold hover:bg-gray-800"
           >
-            Browse the Marketplace
+            Explore All Integrations
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>

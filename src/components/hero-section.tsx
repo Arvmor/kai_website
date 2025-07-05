@@ -17,13 +17,13 @@ export function HeroSection() {
         {/* Main Headline */}
         <div className="mb-8">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Build a free website with{" "}
+            Synced with{" "}
             <span className="text-white">
               Synapse
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Enjoy full design freedom, powerful CMS, built-in SEO, and real-time collaboration. Create professional, fully custom sites with the no-code builder loved by designers and high-performing teams.
+            Live crypto news intelligence, trending projects dashboard, and AI-powered analytics. Get real-time insights from Twitter, Bloomberg, and top sources with updates every 4 seconds.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export function HeroSection() {
             size="lg" 
             className="bg-white hover:bg-gray-100 text-black px-8 py-4 text-lg font-semibold"
           >
-            Start for free
+            Start exploring
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           <Button 
@@ -42,45 +42,13 @@ export function HeroSection() {
             className="border-2 border-gray-600 text-white px-8 py-4 text-lg font-semibold hover:bg-gray-900"
           >
             <Play className="mr-2 w-5 h-5" />
-            See it in action
+            Watch demo
           </Button>
         </div>
 
         {/* Demo Preview */}
-        <div className="mt-16 relative">
-          <div className="relative mx-auto max-w-5xl">
-            {/* Browser Frame */}
-            <div className="bg-gray-900 rounded-lg shadow-2xl border border-gray-700 overflow-hidden">
-              {/* Browser Header */}
-              <div className="flex items-center space-x-2 p-4 bg-gray-800 border-b border-gray-700">
-                <div className="flex space-x-2">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                </div>
-                <div className="flex-1 mx-4">
-                  <div className="bg-gray-700 rounded-md px-3 py-1 text-sm text-gray-300">
-                    synapse-website.synapse.app
-                  </div>
-                </div>
-              </div>
-              
-              {/* Demo Content */}
-              <div className="aspect-video bg-gray-800 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-black font-bold text-2xl">S</span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-white mb-2">
-                    Synapse Website Builder
-                  </h3>
-                  <p className="text-gray-400">
-                    Beautiful websites, built with Synapse
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="mt-16 relative rounded-lg overflow-hidden">
+          <video src="/demo.mp4" autoPlay muted loop className="w-full h-full object-cover" />
         </div>
       </div>
     </section>

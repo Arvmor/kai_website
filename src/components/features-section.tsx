@@ -2,44 +2,44 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Palette, Zap, Users, Database, Search, Globe } from "lucide-react"
+import { ArrowRight, Search, TrendingUp, Rocket, BarChart3, Brain, Zap } from "lucide-react"
 
 export function FeaturesSection() {
   const features = [
     {
-      icon: Palette,
-      title: "Design",
-      description: "A true design canvas, not just a visual HTML editor.",
+      icon: Search,
+      title: "Live News",
+      description: "Aggregated crypto news from top sources (Twitter, Bloomberg, etc.) with AI-assessed impact (High/Medium/Low) and crypto-focused filtering.",
+      color: "bg-white"
+    },
+    {
+      icon: TrendingUp,
+      title: "Trending Projects Dashboard",
+      description: "Tracks Crypto, NFT, DeFi, Gaming, and AI projects with real-time social + market metrics (mentions, price, volume, TVL).",
+      color: "bg-white"
+    },
+    {
+      icon: Rocket,
+      title: "Seed Rounds & Investment Discovery",
+      description: "Live & upcoming Web3 funding rounds (DeFi, AI/ML, NFTs, etc.) with AI scoring for deal evaluation and investor insights.",
+      color: "bg-white"
+    },
+    {
+      icon: BarChart3,
+      title: "Real-Time Trading & DEX Analytics",
+      description: "Multi-DEX support (DexScreener, BullX, Trojan) with live trading metrics: market cap, price change, unique trader count.",
+      color: "bg-white"
+    },
+    {
+      icon: Brain,
+      title: "AI-Powered Web3 Analytics",
+      description: "Sentiment analysis and signal detection with market impact prediction and risk & momentum scoring.",
       color: "bg-white"
     },
     {
       icon: Zap,
-      title: "Animations",
-      description: "Make your designs move, without moving mountains.",
-      color: "bg-white"
-    },
-    {
-      icon: Users,
-      title: "Collaborate",
-      description: "Great things happen together. Collaborate live on one canvas.",
-      color: "bg-white"
-    },
-    {
-      icon: Database,
-      title: "CMS",
-      description: "Build a CMS that fits you and your team.",
-      color: "bg-white"
-    },
-    {
-      icon: Search,
-      title: "SEO",
-      description: "SEO that works. Speed that wins.",
-      color: "bg-white"
-    },
-    {
-      icon: Globe,
-      title: "Publish",
-      description: "One button, global reach. Synapse makes it seamless.",
+      title: "4-Second Updates",
+      description: "Real-time data refresh every 4 seconds ensuring you never miss critical market movements and breaking news.",
       color: "bg-white"
     }
   ]
@@ -50,10 +50,10 @@ export function FeaturesSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Not everything powerful has to look complicated
+            Synapse Platform
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Synapse combines powerful features with an intuitive interface, making website creation accessible to everyone.
+            From live news aggregation to AI-powered analytics, get everything you need to stay ahead in the Web3 ecosystem.
           </p>
         </div>
 
@@ -90,27 +90,27 @@ export function FeaturesSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                400
+                4s
               </div>
-              <div className="text-gray-300">Live Visitors</div>
+              <div className="text-gray-300">Update Interval</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                1.7M
+                50+
               </div>
-              <div className="text-gray-300">Unique Visitors</div>
+              <div className="text-gray-300">News Sources</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                3.2M
+                1000+
               </div>
-              <div className="text-gray-300">Total Pageviews</div>
+              <div className="text-gray-300">Tracked Projects</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                43%
+                AI
               </div>
-              <div className="text-gray-300">Bounce Rate</div>
+              <div className="text-gray-300">Powered Analytics</div>
             </div>
           </div>
         </div>
