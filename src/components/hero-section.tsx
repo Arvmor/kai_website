@@ -31,7 +31,7 @@ export function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button 
             size="lg" 
-            className="bg-muted/80 hover:bg-gray-100 text-black px-8 py-4 text-lg font-semibold"
+            variant="glassy"
           >
             Early Access
             <ArrowRight className="size-4" />

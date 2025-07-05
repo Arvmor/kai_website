@@ -15,16 +15,12 @@ export function Navigation() {
       href: "#features",
     },
     {
-      label: "Dashboards",
-      href: "#templates"
+      label: "Subscription",
+      href: "#subscription"
     },
     {
-      label: "Enterprise",
-      href: "/enterprise"
-    },
-    {
-      label: "Pricing",
-      href: "#pricing"
+      label: "Airdrop",
+      href: "/airdrop"
     },
   ]
 
@@ -53,11 +49,8 @@ export function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="text-gray-300 hover:text-white">
-              Start exploring
-            </Button>
-            <Button size="sm" className="bg-white hover:bg-gray-100 text-black">
-              Get Started
+            <Button size="sm" variant="glassy">
+              Early Access
             </Button>
           </div>
 

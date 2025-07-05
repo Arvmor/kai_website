@@ -79,14 +79,13 @@ export function Footer() {
             <div className="flex space-x-4">
               <Button 
                 size="sm" 
-                className="bg-white text-black hover:bg-gray-100"
+                variant="glassy"
               >
-                Start exploring
+                Early Access
               </Button>
               <Button 
                 size="sm" 
-                variant="outline" 
-                className="border-gray-600 text-white hover:bg-gray-900"
+                variant="glassy"
               >
                 View demo
               </Button>
