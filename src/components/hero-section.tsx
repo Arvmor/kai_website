@@ -3,12 +3,29 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import { useEffect, useRef } from "react"
 
 export function HeroSection() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (video) {
+      const playPromise = video.play()
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          video.muted = true
+          video.play().catch(() => {})
+        })
+      }
+    }
+  }, [])
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-60">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none opacity-30 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-repeat [background-size:4px_4px] animate-[starMove_100s_linear_infinite]"></div>
         {/* Floating Stars with enhanced movement */}
         <div className="absolute top-20 left-20 w-1 h-1 bg-white rounded-full animate-pulse opacity-60" style={{ animation: 'float 6s ease-in-out infinite, pulse 2s ease-in-out infinite' }}></div>
         <div className="absolute top-32 right-32 w-0.5 h-0.5 bg-white rounded-full opacity-40" style={{ animation: 'float 8s ease-in-out infinite 1s, pulse 3s ease-in-out infinite' }}></div>
@@ -76,6 +93,11 @@ export function HeroSection() {
           75% { transform: translateX(0px) translateY(100px) rotate(270deg); }
           100% { transform: translateX(100px) translateY(0px) rotate(360deg); }
         }
+
+        @keyframes starMove {
+          from { background-position: 0 0; }
+          to { background-position: 1000px 0; }
+        }
       `}</style>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -120,7 +142,15 @@ export function HeroSection() {
           
           {/* Video with shadow */}
           <div className="relative shadow-2xl shadow-black/50">
-            <video src="/demo.mp4" autoPlay muted loop className="w-full h-full object-cover rounded-lg" />
+            <video
+              ref={videoRef}
+              src="/demo.mp4"
+              autoPlay
+              muted
+              playsInline
+              loop
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
         </div>
       </div>
