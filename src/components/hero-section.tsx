@@ -25,7 +25,6 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-60">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none opacity-30 bg-[radial-gradient(#ffffff_1px,transparent_1px)] bg-repeat [background-size:4px_4px] animate-[starMove_100s_linear_infinite]"></div>
         {/* Floating Stars with enhanced movement */}
         <div className="absolute top-20 left-20 w-1 h-1 bg-white rounded-full animate-pulse opacity-60" style={{ animation: 'float 6s ease-in-out infinite, pulse 2s ease-in-out infinite' }}></div>
         <div className="absolute top-32 right-32 w-0.5 h-0.5 bg-white rounded-full opacity-40" style={{ animation: 'float 8s ease-in-out infinite 1s, pulse 3s ease-in-out infinite' }}></div>
