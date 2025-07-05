@@ -25,7 +25,7 @@ export function EnterpriseHeroSection() {
                 Build smarter.
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Synapse helps teams collaborate seamlessly, publish faster, and scale smarter with premium hosting and enterprise-grade security.
+                Synps helps teams collaborate seamlessly, publish faster, and scale smarter with premium hosting and enterprise-grade security.
               </p>
             </div>
 

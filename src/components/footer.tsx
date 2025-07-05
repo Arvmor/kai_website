@@ -70,11 +70,11 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-6">
-              <Image src="/logo.png" alt="Synapse" width={32} height={32}/>
-              <span className="text-xl font-bold">Synapse</span>
+              <Image src="/logo.png" alt="Synps" width={32} height={32}/>
+              <span className="text-xl font-bold">Synps</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
-              Stay ahead in the Web3 - Synapse
+              Stay ahead in the Web3 - Synps
             </p>
             <div className="flex space-x-4">
               <Button 
@@ -117,7 +117,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-6">
-            <span className="text-gray-400 text-sm">© 2024 Synapse. All rights reserved.</span>
+            <span className="text-gray-400 text-sm">© 2024 Synps. All rights reserved.</span>
           </div>
           
           <div className="flex items-center space-x-6">

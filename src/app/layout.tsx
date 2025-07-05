@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Synapse - Live Crypto News & Analytics",
+  title: "Synps - Live Crypto News & Analytics",
   description: "Real-time Web3 news intelligence, trending projects dashboard, seed round discovery, and AI-powered crypto analytics. Stay ahead with live updates every 4 seconds.",
   keywords: ["Web3", "crypto news", "blockchain analytics", "DeFi", "NFT", "crypto intelligence", "trading analytics", "investment discovery"],
   authors: [{ name: "Web3 Intelligence Team" }],
   openGraph: {
-    title: "Synapse - Live Crypto News & Analytics",
+    title: "Synps - Live Crypto News & Analytics",
     description: "Real-time Web3 news intelligence, trending projects dashboard, seed round discovery, and AI-powered crypto analytics. Stay ahead with live updates every 4 seconds.",
     type: "website",
   },
