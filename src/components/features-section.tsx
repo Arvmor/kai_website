@@ -60,7 +60,7 @@ export function FeaturesSection() {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-gray-900 hover:bg-gray-800">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10">
               <CardHeader className="pb-4">
                 <div className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-6 h-6 text-black" />
@@ -86,7 +86,7 @@ export function FeaturesSection() {
         </div>
 
         {/* Stats Section */}
-        <div className="bg-gray-900 rounded-2xl p-8 md:p-12">
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-white mb-2">
