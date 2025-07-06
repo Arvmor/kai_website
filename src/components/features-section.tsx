@@ -3,6 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Search, TrendingUp, Rocket, BarChart3, Brain, Zap } from "lucide-react"
+import { AppDock } from "./app-dock"
 
 export function FeaturesSection() {
   const features = [
@@ -56,6 +57,9 @@ export function FeaturesSection() {
             From live news aggregation to AI-powered analytics, get everything you need to stay ahead in the Web3 ecosystem.
           </p>
         </div>
+
+        <AppDock />
+
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
