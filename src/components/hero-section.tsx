@@ -119,6 +119,11 @@ export function HeroSection() {
           <Button 
             size="lg" 
             variant="glassy"
+            onClick={() => {
+              const tweetText = encodeURIComponent("Looking to get early access to @synps_app \n\nOne platform for market data, sentiment, deal flow, and trends")
+              const twitterUrl = `https://twitter.com/intent/tweet?text=${tweetText}`
+              window.open(twitterUrl, '_blank')
+            }}
           >
             Early Access
             <ArrowRight className="size-4" />
