@@ -46,10 +46,10 @@ export function EnterpriseContactSection() {
               </p>
               <Button 
                 variant="outline" 
-                className="border-white/20 text-white hover:bg-white/10"
+                className="group"
               >
-                Start trial
-                <ArrowRight className="ml-2 w-4 h-4" />
+                <span className="relative z-10">Start trial</span>
+                <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </div>
           </div>
@@ -154,9 +154,11 @@ export function EnterpriseContactSection() {
 
               <Button 
                 type="submit"
-                className="w-full bg-white hover:bg-gray-100 text-black py-3 text-lg font-semibold rounded-full"
+                variant="primary"
+                size="lg"
+                className="w-full group"
               >
-                Send message
+                <span className="relative z-10">Send message</span>
               </Button>
             </form>
 

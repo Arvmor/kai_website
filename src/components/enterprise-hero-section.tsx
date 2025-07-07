@@ -30,21 +30,22 @@ export function EnterpriseHeroSection() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center mb-12">
               <Button 
-                size="lg" 
-                className="bg-white hover:bg-gray-100 text-black px-8 py-4 text-lg font-semibold rounded-full"
+                size="xl" 
+                variant="primary"
+                className="group"
               >
-                Explore
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <span className="relative z-10">Explore</span>
+                <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
               <Button 
                 variant="outline" 
-                size="lg" 
-                className="border-2 border-gray-600 text-white px-8 py-4 text-lg font-semibold hover:bg-gray-900 rounded-full bg-white/10 backdrop-blur-sm"
+                size="xl" 
+                className="group"
               >
-                <Play className="mr-2 w-5 h-5" />
-                Watch video
+                <Play className="mr-2 w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
+                <span className="relative z-10">Watch video</span>
               </Button>
             </div>
           </div>
@@ -112,9 +113,11 @@ export function EnterpriseHeroSection() {
 
                 <Button 
                   type="submit"
-                  className="w-full bg-white hover:bg-gray-100 text-black py-3 text-lg font-semibold rounded-full"
+                  variant="primary"
+                  size="lg"
+                  className="w-full group"
                 >
-                  Get started
+                  <span className="relative z-10">Get started</span>
                 </Button>
               </form>
             </div>

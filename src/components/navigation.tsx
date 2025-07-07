@@ -49,12 +49,14 @@ export function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button size="sm" variant="glassy" onClick={() => {
+            <Button size="sm" variant="primary" onClick={() => {
               const tweetText = encodeURIComponent("Looking to get early access to @synps_app \n\nOne platform for market data, sentiment, deal flow, and trends")
               const twitterUrl = `https://twitter.com/intent/tweet?text=${tweetText}`
               window.open(twitterUrl, '_blank')
-            }}>
-              Early Access
+            }}
+            className="group"
+            >
+              <span className="relative z-10">Early Access</span>
             </Button>
           </div>
 
@@ -89,8 +91,8 @@ export function Navigation() {
                 <Button variant="ghost" size="sm" className="w-full justify-start text-gray-300 hover:text-white">
                   Start exploring
                 </Button>
-                <Button size="sm" className="w-full bg-white hover:bg-gray-100 text-black">
-                  Get Started
+                <Button size="sm" variant="primary" className="w-full group">
+                  <span className="relative z-10">Get Started</span>
                 </Button>
               </div>
             </div>

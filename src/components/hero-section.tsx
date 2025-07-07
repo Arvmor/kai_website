@@ -115,18 +115,26 @@ export function HeroSection() {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
           <Button 
-            size="lg" 
-            variant="glassy"
+            size="xl" 
+            variant="primary"
             onClick={() => {
               const tweetText = encodeURIComponent("Looking to get early access to @synps_app \n\nOne platform for market data, sentiment, deal flow, and trends")
               const twitterUrl = `https://twitter.com/intent/tweet?text=${tweetText}`
               window.open(twitterUrl, '_blank')
             }}
+            className="group"
           >
-            Early Access
-            <ArrowRight className="size-4" />
+            <span className="relative z-10">Get Early Access</span>
+            <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </Button>
+          <Button 
+            size="xl" 
+            variant="outline"
+            className="group"
+          >
+            <span className="relative z-10">Watch Demo</span>
           </Button>
         </div>
 
