@@ -131,21 +131,10 @@ export function HeroSection() {
         </div>
 
         {/* Demo Preview */}
-        <div className="mt-16 relative rounded-lg overflow-hidden">
-          {/* Top gradient shadow */}
-          <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-black/60 to-transparent z-10 pointer-events-none"></div>
-          
-          {/* Bottom gradient shadow */}
-          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/60 to-transparent z-10 pointer-events-none"></div>
-          
-          {/* Left gradient shadow */}
-          <div className="absolute top-0 left-0 bottom-0 w-16 bg-gradient-to-r from-black/60 to-transparent z-10 pointer-events-none"></div>
-          
-          {/* Right gradient shadow */}
-          <div className="absolute top-0 right-0 bottom-0 w-16 bg-gradient-to-l from-black/60 to-transparent z-10 pointer-events-none"></div>
-          
+        <div className="mt-16 relative rounded-md rounded-b-none overflow-hidden border-1 border-b-0 border-muted/90">
+         
           {/* Video with shadow */}
-          <div className="relative shadow-2xl shadow-black/50">
+          <div className="relative">
             <video
               ref={videoRef}
               src="/demo.mp4"
@@ -153,7 +142,7 @@ export function HeroSection() {
               muted
               playsInline
               loop
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
