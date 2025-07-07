@@ -92,9 +92,7 @@ export function AppDock() {
       <div className="p-2 w-auto h-full flex items-center justify-center space-x-4">
         {apps.map((app, index) => (
           <li key={app.id} className="list-none flex items-center justify-center w-12 h-12 align-bottom transition-all duration-300 ease-out origin-bottom relative group">
-            <div className="absolute -top-18 bg-black/50 text-white/90 px-3 py-2 flex items-center justify-center rounded-md invisible group-hover:visible whitespace-nowrap text-sm z-10 after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-0 after:h-0 after:border-l-2 after:border-r-2 after:border-t-2 after:border-transparent after:border-t-black/50">
-              {app.name}
-            </div>
+
             <Image
               ref={(el) => {
                 iconRefs.current[index] = el
