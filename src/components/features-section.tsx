@@ -11,37 +11,43 @@ export function FeaturesSection() {
       icon: Search,
       title: "Live News",
       description: "Aggregated crypto news from top sources (Twitter, Bloomberg, etc.) with AI-assessed impact (High/Medium/Low) and crypto-focused filtering.",
-      color: "bg-white"
+      color: "bg-white",
+      image: "/demo.mp4" // You can replace with actual images
     },
     {
       icon: TrendingUp,
       title: "Trending Projects Dashboard",
       description: "Tracks Crypto, NFT, DeFi, Gaming, and AI projects with real-time social + market metrics (mentions, price, volume, TVL).",
-      color: "bg-white"
+      color: "bg-white",
+      image: "/demo.mp4"
     },
     {
       icon: Rocket,
       title: "Seed Rounds & Investment Discovery",
       description: "Live & upcoming Web3 funding rounds (DeFi, AI/ML, NFTs, etc.) with AI scoring for deal evaluation and investor insights.",
-      color: "bg-white"
+      color: "bg-white",
+      image: "/demo.mp4"
     },
     {
       icon: BarChart3,
       title: "Real-Time Trading & DEX Analytics",
       description: "Multi-DEX support (DexScreener, BullX, Trojan) with live trading metrics: market cap, price change, unique trader count.",
-      color: "bg-white"
+      color: "bg-white",
+      image: "/demo.mp4"
     },
     {
       icon: Brain,
       title: "AI-Powered Web3 Analytics",
       description: "Sentiment analysis and signal detection with market impact prediction and risk & momentum scoring.",
-      color: "bg-white"
+      color: "bg-white",
+      image: "/demo.mp4"
     },
     {
       icon: Zap,
       title: "4-Second Updates",
       description: "Real-time data refresh every 4 seconds ensuring you never miss critical market movements and breaking news.",
-      color: "bg-white"
+      color: "bg-white",
+      image: "/demo.mp4"
     }
   ]
 
@@ -60,32 +66,51 @@ export function FeaturesSection() {
 
         <AppDock />
 
-
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {/* Alternative Layout Features */}
+        <div className="space-y-24 mb-16">
           {features.map((feature, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10">
-              <CardHeader className="pb-4">
-                <div className={`w-12 h-12 rounded-lg ${feature.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <feature.icon className="w-6 h-6 text-black" />
+            <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}>
+              {/* Image/Visual Side */}
+              <div className="flex-1 w-full lg:w-1/2">
+                <div className="relative group">
+                  <div className="aspect-video bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl border border-white/10 overflow-hidden">
+                    <video 
+                      autoPlay 
+                      loop 
+                      muted 
+                      playsInline
+                      className="w-full h-full object-cover"
+                    >
+                      <source src={feature.image} type="video/mp4" />
+                    </video>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
                 </div>
-                <CardTitle className="text-xl font-semibold text-white">
-                  {feature.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-300 text-base leading-relaxed">
-                  {feature.description}
-                </CardDescription>
-                <Button 
-                  variant="ghost" 
-                  className="mt-4 p-0 h-auto text-white hover:text-gray-300 group-hover:translate-x-1 transition-transform duration-300"
-                >
-                  Learn more
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </CardContent>
-            </Card>
+              </div>
+
+              {/* Content Side */}
+              <div className="flex-1 w-full lg:w-1/2 space-y-6">
+                <div className={`w-16 h-16 rounded-xl ${feature.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                  <feature.icon className="w-8 h-8 text-black" />
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                    {feature.description}
+                  </p>
+                  <Button 
+                    variant="ghost" 
+                    className="p-0 h-auto text-white hover:text-gray-300 group-hover:translate-x-1 transition-transform duration-300"
+                  >
+                    Learn more
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
 
