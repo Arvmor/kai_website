@@ -90,8 +90,8 @@ export function FeaturesSection() {
 
               {/* Content Side */}
               <div className="flex-1 w-full lg:w-1/2 space-y-6">
-                <div className={`w-16 h-16 rounded-xl ${feature.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <feature.icon className="w-8 h-8 text-black" />
+                <div className="w-16 h-16 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 
                 <div>
