@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, FileText, LineChart, DollarSign, Activity, Brain, Zap } from "lucide-react"
 import { AppDock } from "./app-dock"
