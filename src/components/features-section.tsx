@@ -2,7 +2,7 @@
 
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, FileText, LineChart, DollarSign, Activity, Brain, Zap } from "lucide-react"
+import { ArrowRight, FileText, LineChart, DollarSign, Activity } from "lucide-react"
 import { AppDock } from "./app-dock"
 import Image from "next/image"
 
