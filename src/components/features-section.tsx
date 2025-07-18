@@ -4,6 +4,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, FileText, LineChart, DollarSign, Activity, Brain, Zap } from "lucide-react"
 import { AppDock } from "./app-dock"
+import Image from "next/image"
 
 export function FeaturesSection() {
   const features = [
@@ -12,43 +13,29 @@ export function FeaturesSection() {
       title: "Live News",
       description: "Stay ahead with our comprehensive crypto news aggregation system. We monitor Twitter, Bloomberg, CoinDesk, and 50+ other premium sources in real-time. Our AI engine assesses each piece of news for market impact (High/Medium/Low) and filters out noise to deliver only the most relevant crypto-focused content. Never miss breaking news that could affect your portfolio.",
       color: "bg-white",
-      image: "/demo.mp4" // You can replace with actual images
+      image: "/app_news.png" // You can replace with actual images
     },
     {
       icon: LineChart,
       title: "Trending Projects Dashboard",
       description: "Track the pulse of the entire Web3 ecosystem with our comprehensive dashboard. Monitor Crypto, NFT, DeFi, Gaming, and AI projects across multiple chains. Get real-time social metrics including mention volume, sentiment analysis, and community growth. Combined with market data like price movements, trading volume, and TVL changes, you'll have a complete picture of what's trending and why.",
       color: "bg-white",
-      image: "/demo.mp4"
+      image: "/app_trend.png"
     },
     {
       icon: DollarSign,
       title: "Seed Rounds & Investment Discovery",
       description: "Discover the next big thing before it goes mainstream. Our platform tracks live and upcoming Web3 funding rounds across DeFi, AI/ML, NFTs, Gaming, and Infrastructure sectors. Each deal is scored by our AI using multiple factors including team background, market opportunity, and investor interest. Get detailed insights into deal terms, participating investors, and market positioning to make informed investment decisions.",
       color: "bg-white",
-      image: "/demo.mp4"
+      image: "/app_seeds.png"
     },
     {
       icon: Activity,
-      title: "ConfluX — Real-Time Confluence Detection",
-      description: "Introducing ConfluX — our revolutionary AI-powered confluence detection engine. It tracks thousands of wallets across Ethereum, Polygon, BSC, and other major chains simultaneously. The system identifies critical moments when multiple unique buyers act in synchronized patterns on specific tokens, signaling potential breakout opportunities. Our advanced algorithms filter out noise and focus on genuine confluence patterns, helping you spot early momentum before it becomes mainstream and capitalize on emerging trends.",
+      title: "ConfluX - Real-Time Confluence Detection",
+      description: "Introducing ConfluX - our revolutionary AI-powered confluence detection engine. It tracks thousands of wallets across Ethereum, Polygon, BSC, and other major chains simultaneously. The system identifies critical moments when multiple unique buyers act in synchronized patterns on specific tokens, signaling potential breakout opportunities. Our advanced algorithms filter out noise and focus on genuine confluence patterns, helping you spot early momentum before it becomes mainstream and capitalize on emerging trends.",
       color: "bg-white",
-      image: "/demo.mp4"
+      image: "/app_trades.png"
     },
-    {
-      icon: Brain,
-      title: "AI-Powered Web3 Analytics",
-      description: "Leverage the power of artificial intelligence to gain unprecedented insights into the crypto market. Our sentiment analysis engine processes millions of social media posts, news articles, and market data points to detect emerging trends and market shifts. Advanced signal detection algorithms identify patterns that human traders might miss, while our risk and momentum scoring system helps you make data-driven decisions. Get predictive analytics that give you the edge in volatile markets.",
-      color: "bg-white",
-      image: "/demo.mp4"
-    },
-    {
-      icon: Zap,
-      title: "4-Second Updates",
-      description: "In the fast-paced world of crypto, every second counts. Our platform delivers real-time data updates every 4 seconds across all features — from price movements and trading volume to news alerts and social sentiment changes. This ultra-fast refresh rate ensures you never miss critical market movements, breaking news, or emerging opportunities. Stay ahead of the competition with the fastest data feed in the industry.",
-      color: "bg-white",
-      image: "/demo.mp4"
-    }
   ]
 
   return (
@@ -71,20 +58,8 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}>
               {/* Image/Visual Side */}
-              <div className="flex-1 w-full lg:w-1/2">
-                <div className="relative group">
-                  <div className="aspect-[4/5] bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl border border-white/10 overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-gray-800/50 to-gray-900/50 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                          <feature.icon className="w-8 h-8 text-white" />
-                        </div>
-                        <p className="text-white/70 text-sm font-medium">{feature.title}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-                </div>
+              <div className="ring-2 ring-white/10 rounded-xl overflow-hidden">
+              <Image src={feature.image} alt={feature.title} width={500} height={500} />
               </div>
 
               {/* Content Side */}
