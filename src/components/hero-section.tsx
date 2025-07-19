@@ -49,7 +49,7 @@ export function HeroSection() {
         
         {/* Animated Waves with enhanced movement */}
         <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-3xl transition-all duration-1500 delay-500 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`} style={{ animation: 'pulse 4s ease-in-out infinite, float 12s ease-in-out infinite' }}></div>
-        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl transition-all duration-1500 delay-700 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`} style={{ animation: 'pulse 6s ease-in-out infinite 1s, float 15s ease-in-out infinite 2s' }}></div>
+        <div className={`absolute bottom-10 -left-40 w-80 h-80 bg-gradient-to-tr from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl transition-all duration-1500 delay-700 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`} style={{ animation: 'pulse 6s ease-in-out infinite 1s, float 15s ease-in-out infinite 2s' }}></div>
         <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl transition-all duration-1500 delay-900 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`} style={{ animation: 'pulse 5s ease-in-out infinite 2s, float 18s ease-in-out infinite 1s' }}></div>
         
         {/* Rotating elements */}
