@@ -1,8 +1,7 @@
 "use client"
 
 
-import { Button } from "@/components/ui/button"
-import { ArrowRight, FileText, LineChart, DollarSign, Activity } from "lucide-react"
+import { FileText, LineChart, DollarSign, Activity } from "lucide-react"
 import { AppDock } from "./app-dock"
 import Image from "next/image"
 
@@ -58,8 +57,9 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}>
               {/* Image/Visual Side */}
-              <div className="ring-2 ring-white/10 rounded-xl overflow-hidden">
-              <Image src={feature.image} alt={feature.title} width={500} height={500} />
+              <div className="relative rounded-xl overflow-hidden">
+                <Image src={feature.image} alt={feature.title} width={500} height={500} />
+                <div className="image-black-fade pointer-events-none absolute inset-0 z-10" />
               </div>
 
               {/* Content Side */}
@@ -79,13 +79,6 @@ export function FeaturesSection() {
                   </div>
                 </div>
                 
-                <Button 
-                  variant="ghost" 
-                  className="p-0 h-auto text-white hover:text-gray-300 group-hover:translate-x-1 transition-transform duration-300 text-lg font-medium group"
-                >
-                  <span className="relative z-10">Learn more</span>
-                  <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-                </Button>
               </div>
             </div>
           ))}

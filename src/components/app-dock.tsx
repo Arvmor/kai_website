@@ -91,7 +91,7 @@ export function AppDock() {
     <div className="w-auto h-15 flex justify-center m-10">
       <div className="p-2 w-auto h-full flex items-center justify-center space-x-4">
         {apps.map((app, index) => (
-          <li key={app.id} className="list-none flex items-center justify-center w-12 h-12 align-bottom transition-all duration-300 ease-out origin-bottom relative group">
+          <li key={app.id} className="list-none flex items-center justify-center w-12 h-12 align-bottom transition-all duration-300 ease-out origin-bottom relative group mb-8">
 
             <Image
               ref={(el) => {
