@@ -147,6 +147,26 @@ export function HeroSection() {
             transform: translateX(0);
           }
         }
+        @keyframes neonGradientMove {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        .neon-gradient-text {
+          background: linear-gradient(270deg, #3b82f6, #a78bfa, #3b82f6);
+          background-size: 200% 200%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+          animation: neonGradientMove 10s ease-in-out infinite;
+        }
       `}</style>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -159,7 +179,7 @@ export function HeroSection() {
           <div className={`transition-all duration-1000 delay-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Synced with{" "}
-              <span className="text-white">
+              <span className="neon-gradient-text">
                 Synps
               </span>
             </h1>
@@ -186,13 +206,6 @@ export function HeroSection() {
           >
             <span className="relative z-10">Get Early Access</span>
             <ArrowRight className="size-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </Button>
-          <Button 
-            size="xl" 
-            variant="outline"
-            className="group"
-          >
-            <span className="relative z-10">Watch Demo</span>
           </Button>
         </div>
 
